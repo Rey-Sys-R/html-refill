@@ -1,0 +1,29 @@
+using System;
+using System.IO.Ports;
+
+class Program
+{
+    static SerialPort serialPort;
+
+    static void Main(string[] args)
+    {
+        serialPort = new SerialPort("COM3", 9600);  // Ganti "COM3" dengan port yang sesuai dengan Arduino Anda
+        serialPort.Open();
+
+        serialPort.DataReceived += SerialPort_DataReceived;
+
+        Console.WriteLine("Ketikkan karakter dan tekan Enter untuk mengirim ke Arduino.");
+
+        while (true)
+        {
+            string input = Console.ReadLine();  // Membaca input dari pengguna
+            serialPort.WriteLine(input);  // Mengirim input ke Arduino
+        }
+    }
+
+    static void SerialPort_DataReceived(object sender, SerialDataReceivedEventArgs e)
+    {
+        string data = serialPort.ReadLine();  // Menerima data dari Arduino
+        Console.WriteLine("Data yang diterima dari Arduino: " + data);
+    }
+}

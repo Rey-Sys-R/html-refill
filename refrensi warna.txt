@@ -1,0 +1,11 @@
+Berikut adalah kode warna HTML untuk abu-abu, hitam, dan putih:
+
+Abu-abu:
+Light Gray: #D3D3D3 atau rgb(211, 211, 211)
+Dark Gray: #A9A9A9 atau rgb(169, 169, 169)
+Gray: #808080 atau rgb(128, 128, 128)1
+Hitam:
+Black: #000000 atau rgb(0, 0, 0)2
+Putih:
+White: #FFFFFF atau rgb(255, 255, 255)3
+Apakah Anda membutuhkan kode warna lainnya?

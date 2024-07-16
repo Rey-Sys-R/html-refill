@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Konfirmasi Pemilihan</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .container {
+      background-color: lightgray;
+      padding: 20px;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Tampilan Konfirmasi Pemilihan</h2>
+    <p>Apakah yakin dengan pemilihannya?</p>
+    <p>Klik tombol next jika yakin</p>
+  </div>
+  <button class="btn btn-secondary" id="backButton" ui_control="button" ui_button="button" ui_button_label="BACK" ui_button_color="#6c757d" ui_button_style="rounded" ui_button_payload="back">BACK</button>
+  <button class="btn btn-secondary" id="nextButton" ui_control="button" ui_button="button" ui_button_label="NEXT" ui_button_color="#6c757d" ui_button_style="rounded" ui_button_payload="next">NEXT</button>
+  <script src="300mlhot.js"></script>
+</body>
+</html>
