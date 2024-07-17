@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
     uibuilder.start();
 
     // Placeholder for the button
-    const button1Html = '<button class="btn btn-primary" style="width:100px; margin-bottom:10px;" onclick="sendPayload(\'button1\')">Refill</button>';
+    const button1Html = '<button class="btn btn-primary" style="width:100px; margin-bottom:10px;" onclick="sendPayload(\'button3\')">Refill</button>';
 
     // Debugging log
     console.log('Setting up uibuilder message listener...');
@@ -39,8 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
 // Function to send payload
 function sendPayload(button) {
     let payload = {};
-    if (button === 'button1') {
-        payload = { type: 'button1', value: '1' };
+    if (button === 'button3') {
+        payload = { type: 'button3', value: '1' };
     }
     uibuilder.send({ payload: payload });
 }
