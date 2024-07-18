@@ -26,6 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
             // Hide the button
             console.log('Hiding Button 1');
             container.innerHTML = '';
+        } else if (msg.payload === 'done') {
+            // Hide the button
+            console.log('Show Button 1');
+            window.location.href = 'thx.html';
         } else {
             // Debugging log for unexpected payload
             console.log('Unexpected payload:', msg.payload);
